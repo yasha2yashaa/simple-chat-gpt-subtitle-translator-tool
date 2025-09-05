@@ -20,7 +20,7 @@ The script preserves subtitle structure, timestamps, and block numbering while t
 .
 ├── input/          # Place your original .srt/.txt files here
 ├── output/         # Translated files will appear here
-├── main.py    # Main translation script
+├── main.py         # Main translation script
 └── README.md
 
 ````
@@ -57,11 +57,11 @@ pip install openai
 3. Adjust configuration at the top of the script if needed:
 
    ```python
-   SOURCE_FOLDER = "input"         # Where subtitle files are placed
-   OUTPUT_FOLDER = "output"        # Where translations are saved
-   TARGET_LANGUAGE = "Polish"      # Change target language
-   MODEL = "gpt-5-mini"            # Model to use
-   CHUNK_SIZE = 2000               # Approx. characters per chunk
+   SOURCE_FOLDER = "input"         # Where subtitle files are placed, no need to change it
+   OUTPUT_FOLDER = "output"        # Where translations are saved, no need to change it
+   TARGET_LANGUAGE = "Polish"      # Change target language to the desired one
+   MODEL = "gpt-5-mini"            # Model to use, no need to change it
+   CHUNK_SIZE = 2000               # Approx. characters to translate per chunk, no need to change it
    ```
 
 ---
