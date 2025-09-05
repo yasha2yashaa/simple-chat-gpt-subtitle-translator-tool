@@ -4,16 +4,17 @@ import openai
 import time
 
 # ------------------ CONFIG ------------------
-SOURCE_FOLDER = "input"       # folder containing .srt/.txt files
+openai.api_key = "YOUR OPENAI API KEY HERE" # Paste your OpenAi Api key to this string
+
+SOURCE_FOLDER = "input"       # folder containing .srt/.txt files, can
 OUTPUT_FOLDER = "output"      # folder for translated files
 TARGET_LANGUAGE = "Polish"    # choose the target language
 MODEL = "gpt-5-mini"          # choose a model
 CHUNK_SIZE = 2000             # characters per chunk (approx, for multiple blocks)
 
+# default prompt which tells chat gpt what to do, you can modify it if you want
 PROMPT = f"You are a translator for an API. Translate into {TARGET_LANGUAGE}. Only translate the subtitle text lines, never the index numbers or timestamps. Keep the same number of blocks and the same line breaks, also keep the same exact order of the strings in a response. Respond with plain text only, block by block. Make it sound natural in {TARGET_LANGUAGE}."
 # --------------------------------------------
-
-openai.api_key = "YOUR OPENAI API KEY HERE" # Paste your OpenAi Api key to this string
 
 
 def read_file(file_path):
