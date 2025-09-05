@@ -20,7 +20,7 @@ The script preserves subtitle structure, timestamps, and block numbering while t
 .
 ├── input/          # Place your original .srt/.txt files here
 ├── output/         # Translated files will appear here
-├── translate.py    # Main translation script
+├── main.py    # Main translation script
 └── README.md
 
 ````
@@ -48,7 +48,7 @@ pip install openai
    cd <your-repo>
    ```
 
-2. Open the script (`translate.py`) and paste your OpenAI API key:
+2. Open the script (`main.py`) with text editor and paste your OpenAI API key:
 
    ```python
    openai.api_key = "YOUR OPENAI API KEY HERE"
@@ -80,7 +80,7 @@ pip install openai
 2. Run the script:
 
    ```bash
-   python translate.py
+   python main.py
    ```
 
 3. Translated files will be saved into the `output/` folder, with the same filenames:
