@@ -41,7 +41,7 @@ pip install openai
 
 ## 🔑 Setup
 
-1. Clone the repository:
+1. Clone the repository (You can also click `Code > Download zip`):
 
    ```bash
    git clone https://github.com/<your-username>/<your-repo>.git
