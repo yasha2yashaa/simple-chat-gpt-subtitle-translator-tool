@@ -1,7 +1,7 @@
 # Simple ChatGPT Subtitle Translator
 
-This repository contains a simple Python script I made for **translating subtitles (`.srt` and `.txt` files)** into any target language using the OpenAI API, since I couldn't find any myself. 
-The script preserves subtitle structure, timestamps, and block numbering while translating only the spoken text lines. For the script to work its required to paste your own OpenAI API key into the script, and changing the target language to the desired one - more details below.
+A lightweight **Python script for translating subtitles (`.srt` and `.txt` files) into any language** using the **OpenAI API**.  
+If you're looking for an **easy subtitle translator with ChatGPT**, this project is designed to help you quickly translate movies, TV shows, and YouTube subtitles while keeping the original **timestamps and structure intact**.
 
 ---
 
@@ -11,6 +11,12 @@ The script preserves subtitle structure, timestamps, and block numbering while t
 - Splits large subtitle files into manageable chunks before sending to the API.
 - Handles retries with backoff in case of API errors.
 - Outputs translated files into a dedicated folder.
+
+  Perfect if you searched for:
+- *"ChatGPT subtitle translator"*
+- *"Translate SRT with Python"*
+- *"Batch subtitle translation tool"*
+- *"OpenAI API subtitle translator"*
 
 ---
 
